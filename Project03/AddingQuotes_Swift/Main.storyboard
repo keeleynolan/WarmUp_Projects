@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="addQuotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFr-AK-a4J">
+                                <rect key="frame" x="15" y="28" width="565" height="542"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An app that adds &quot;quotation marks&quot; to a string." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4e-I6-6Jc">
+                                        <rect key="frame" x="13" y="75" width="544" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell me something, a quote from a famous author perhaps? " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ET0-rr-TQg">
+                                        <rect key="frame" x="13" y="191" width="544" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Quotes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uq7-K5-OA9">
+                                        <rect key="frame" x="13" y="8" width="544" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="?" borderStyle="roundedRect" placeholder="?" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p4p-Rp-WtN">
+                                        <rect key="frame" x="13" y="256" width="544" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDa-cd-FCU">
+                                        <rect key="frame" x="8" y="294" width="544" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="M4e-I6-6Jc" firstAttribute="leading" secondItem="zFr-AK-a4J" secondAttribute="leading" constant="13" id="7mu-WB-TmE"/>
+                                    <constraint firstItem="p4p-Rp-WtN" firstAttribute="top" secondItem="ET0-rr-TQg" secondAttribute="bottom" constant="45" id="7o5-X2-4e1"/>
+                                    <constraint firstItem="M4e-I6-6Jc" firstAttribute="top" secondItem="Uq7-K5-OA9" secondAttribute="bottom" constant="31" id="Do9-IZ-Rig"/>
+                                    <constraint firstItem="Uq7-K5-OA9" firstAttribute="top" secondItem="zFr-AK-a4J" secondAttribute="top" constant="8" id="F9T-HN-hgY"/>
+                                    <constraint firstItem="Uq7-K5-OA9" firstAttribute="leading" secondItem="zFr-AK-a4J" secondAttribute="leading" constant="13" id="Jbg-3j-4Kd"/>
+                                    <constraint firstItem="ET0-rr-TQg" firstAttribute="leading" secondItem="zFr-AK-a4J" secondAttribute="leading" constant="13" id="MYl-Xg-35y"/>
+                                    <constraint firstItem="p4p-Rp-WtN" firstAttribute="leading" secondItem="zFr-AK-a4J" secondAttribute="leading" constant="13" id="W8h-hN-1LI"/>
+                                    <constraint firstAttribute="trailing" secondItem="p4p-Rp-WtN" secondAttribute="trailing" constant="8" id="WV6-3w-nEQ"/>
+                                    <constraint firstItem="pDa-cd-FCU" firstAttribute="top" secondItem="p4p-Rp-WtN" secondAttribute="bottom" constant="8" id="YLm-7N-MhP"/>
+                                    <constraint firstItem="ET0-rr-TQg" firstAttribute="top" secondItem="M4e-I6-6Jc" secondAttribute="bottom" constant="95" id="aT7-1R-iIJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="M4e-I6-6Jc" secondAttribute="trailing" constant="8" id="aau-gb-R71"/>
+                                    <constraint firstAttribute="trailing" secondItem="pDa-cd-FCU" secondAttribute="trailing" constant="13" id="dE5-35-9fw"/>
+                                    <constraint firstAttribute="trailing" secondItem="ET0-rr-TQg" secondAttribute="trailing" constant="8" id="e2a-Sg-MK7"/>
+                                    <constraint firstItem="pDa-cd-FCU" firstAttribute="leading" secondItem="zFr-AK-a4J" secondAttribute="leading" constant="8" id="r6J-dY-Wvg"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uq7-K5-OA9" secondAttribute="trailing" constant="8" id="udC-Y0-cel"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zFr-AK-a4J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-5" id="0z6-z1-55M"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zFr-AK-a4J" secondAttribute="bottom" constant="30" id="Gel-q4-pnD"/>
+                            <constraint firstItem="zFr-AK-a4J" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="TER-r4-m5q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zFr-AK-a4J" secondAttribute="trailing" id="XNb-32-pot"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aboutLabel" destination="M4e-I6-6Jc" id="T5R-KY-MMv"/>
+                        <outlet property="authorQuoteLabel" destination="pDa-cd-FCU" id="MXh-ji-cyo"/>
+                        <outlet property="questionLabel" destination="ET0-rr-TQg" id="BtM-WU-cfc"/>
+                        <outlet property="titleLabel" destination="Uq7-K5-OA9" id="Kdi-gi-ZQ0"/>
+                        <outlet property="userInput" destination="p4p-Rp-WtN" id="H1S-cx-g2g"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="190" y="243"/>
+        </scene>
+    </scenes>
+</document>
